@@ -1,7 +1,5 @@
 #include <stdio.h>
-
 /**
- *
  *<stdio.h> - Standard input output 
  *
  *main - the first entry point to the program
@@ -13,6 +11,6 @@
  */
 int main(void)
 {
-  puts("\"Programming is like building a multilingual puzzle\n");
-  return(0);
+    puts("\"Programming is like building a multilingual puzzle\n");
+    return (0);
 }

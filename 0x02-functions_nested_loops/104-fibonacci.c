@@ -8,26 +8,32 @@
 
 int main(void)
 {
-long int sum;
-long int first, second;
-int count;
+unsigned long int i, bef = 1, aft = 2, l  = 1000000000;
+unsigned long int bef1, bef2, aft1, aft2;
 
-sum = 0;
-first = 0;
-second = 1;
-count = 0;
+printf("%lu", bef);
 
-while (count < 99)
+for (i = 1; i < 91; i++)
 {
-sum = first + second;
-printf("%li, ", sum);
-first = second;
-second = sum;
-
-count++;
+printf(", %lu", aft);
+aft += bef;
+bef = aft - bef;
 }
-sum = first + second;
-printf("%li\n", sum);
 
+bef1 = (bef / l);
+bef2 = (bef % l);
+aft1 = (aft / l);
+aft2 = (aft % l);
+
+for (i = 92; i < 99; ++i)
+{
+printf(", %lu", aft1 + (aft2 / l));
+printf("%lu", aft2 % l);
+aft1 = aft1 + bef1;
+bef1 = aft1 - bef1;
+aft2 = aft2 + bef2;
+bef2 = aft2 - bef2;
+}
+printf("\n");
 return (0);
 }

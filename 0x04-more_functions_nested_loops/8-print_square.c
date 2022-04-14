@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * print_diagonal - Draws a diagonal line according to parameter
+ * print_square - Prints n square according n number of times
  *
- * @n: The number of times to print diagonal lines
+ * @size: size of the square
  *
  * Return: void
  */
 
 void print_square(int size)
 {
-int a;
-int b;
+int a, b;
+
 if (size <= 0)
 {
 _putchar('\n');

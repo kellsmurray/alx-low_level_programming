@@ -1,18 +1,9 @@
 #include "main.h"
 
 /**
- * 2-strlen.c - main function checking string length
- * 
- * _strlen returns the string length
- *
- * s is the string array
- *
- * return(len) returns an int value
- *
- * char str checks the character
- *
- * len checks the length
- *
+ * _strlen - returns length of string
+ * @s: string
+ * Return: length of string
  */
 
 int _strlen(char *s)

@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _puts(char *str) - prints out a string
+ * _puts - prints out a string
  *
- * str is a string array
+ * @str is a string array
  *
  * Returns void
  */

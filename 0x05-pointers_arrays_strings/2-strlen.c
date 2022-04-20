@@ -2,10 +2,16 @@
 
 /**
  * 2-strlen.c - main function checking string length
+ * 
+ * _strlen returns the string length
  *
- *char str checks the character
+ * s is the string array
  *
- *len checks the length
+ * return(len) returns an int value
+ *
+ * char str checks the character
+ *
+ * len checks the length
  *
  */
 

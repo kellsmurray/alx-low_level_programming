@@ -27,7 +27,7 @@ _putchar(str[half]);
 }
 else
 {
-half = (n - 1) / 2;
+half = (ttl - 1) / 2;
 while (half != '\0')
 {
 _putchar(str[half]);

@@ -8,29 +8,28 @@
 
 void puts_half(char *str)
 {
-int ttl, half, length = 0;
+int len, n, i;
 
-while (str[length] != '\0')
+len = 0;
+
+while (str[len] != '\0')
 {
-length++;
+len++;
 }
 
-ttl = length++;
-half = ttl / 2;
-  
-if (ttl % 2 == 0)
+if (len % 2 == 0)
 {
-while (str[half] != '\0')
+for (i = len / 2; str[i] != '\0'; i++)
 {
-_putchar(str[half]);
+_putchar(str[i]);
 }
 }
-else
+else if (len % 2)
 {
-half = (ttl - 1) / 2;
-while (str[half] != '\0')
+for (n = (len - 1) / 2; n < len - 1; n++)
 {
-_putchar(str[half]);
+_putchar(str[n + 1]);
 }
 }
+_putchar('\n');
 }

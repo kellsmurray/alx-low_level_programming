@@ -20,7 +20,7 @@ half = ttl / 2;
   
 if (ttl % 2 == 0)
 {
-while (half != '\0')
+while (str[half] != '\0')
 {
 _putchar(str[half]);
 }
@@ -28,7 +28,7 @@ _putchar(str[half]);
 else
 {
 half = (ttl - 1) / 2;
-while (half != '\0')
+while (str[half] != '\0')
 {
 _putchar(str[half]);
 }

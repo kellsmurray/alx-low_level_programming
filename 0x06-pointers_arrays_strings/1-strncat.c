@@ -1,34 +1,17 @@
+#include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 /**
- * _strncat - Concantenate two strings using @ bytes
+ * _strncat - Function that concantenates two strings.
+ * @dest: Pointer to the null-terminated byte string to append to.
+ * @src: Pointer to the character array to copy from.
+ * @n: Maximum number of characters to copy.
  *
- * @dest: Destination string; src string appended to it
- * @src: Source string; gets appended to destination string
- * @n: Number of bytes of src that should be concantenated with dest
- *
- * Return: Pointer to dest
+ * Return: Pointer to dest.
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-
-int i = 0;
-int j = 0;
-
-while (dest[i] != '\0')
-{
-i++;
-}
-    
-while (src[j] != '\0' && n != j)
-{
-*(dest + 1) = src[j];
-j++;
-i++;
-}
-
-*(dest + 1) = '\0';
-
-return (dest);
+return (strncat(dest, src, n));
 }

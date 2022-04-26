@@ -13,13 +13,11 @@ unsigned int _strspn(char *s, char *accept)
 {
 unsigned int length, j;
 
-
 for (length = 0; *(s + length) != '\0'; length++)
 {
 
 for (j =  0; *(accept + j) != '\0'; j++)
 {
-
 
 if (*(s + length) == *(accept + j))
 {

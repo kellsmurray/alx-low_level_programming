@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strstr - locates a substring
+ * _strstr -function that locates a substring
  * @haystack: string to search through
  * @needle: string to match
  * Return: pointer to initial segment of haystack
@@ -20,17 +20,14 @@ while (needle[nlen] != '\0')
 {
 nlen++;
 }
-
 for (i = 0; haystack[i] != '\0'; i++)
 {
-
 for (j = 0; j < nlen && haystack[i] == needle[j]; j++, i++)
 {
 if (j == 0)
 {
 start = i;
 }
-
 if (j == nlen - 1)
 {
 return (haystack + start);

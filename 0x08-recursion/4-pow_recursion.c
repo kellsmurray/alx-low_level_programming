@@ -2,8 +2,8 @@
 
 /**
  * _pow_recursion - a function that returns the value of x raised to the power of y
- * @x: number to power
- * @y: the power 
+ * @:x number to power
+ * @:y the power 
  * Return: an int value of the power
  */
 

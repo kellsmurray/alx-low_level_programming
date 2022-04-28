@@ -43,7 +43,7 @@ return (a);
 }
 else if (n > (a * a))
 {
-return (helper_root_checker(n, a + a));
+return (helper_root_checker(n, a + 1));
 }
 else
 {

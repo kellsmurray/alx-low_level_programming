@@ -3,7 +3,7 @@
 int helper_prime(int n, int i, int limit);
 
 /**
- * is_prme_number - Fnction that returns 1 if a number is a prme num, 0 oth
+ * is_prme_number - a function that returns 1 if a number is a prime num and otherwise returns 0
  * @n: number of input
  * Return: 0
  */

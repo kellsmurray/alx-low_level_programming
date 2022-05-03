@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -11,15 +12,18 @@
 int main(int argc, char *argv[])
 {
 int prod;
+
 if (argc == 3)
 {
 prod = atoi(argv[1]) * atoi(argv[2]);                                                                                                      
 printf("%d\n", prod);
 return (0);
 }
+
 else
 {
 printf("Error");                                                                                                                          
 return (1);
 }
+
 }

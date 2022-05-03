@@ -77,7 +77,7 @@ printf("0\n");
 
 else
 {
-coins = total_coins(atoi(argv[1]));
+coins = make_change(atoi(argv[1]));
 printf("%d\n", coins);
 }
 

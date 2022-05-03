@@ -62,7 +62,7 @@ return (total_coins);
 int main(int argc, char *argv[])
 {
 
-int coins;
+int no_of_coins;
 
 if (argc != 2)
 {
@@ -77,8 +77,8 @@ printf("0\n");
 
 else
 {
-coins = make_change(atoi(argv[1]));
-printf("%d\n", coins);
+no_of_coins = make_change(atoi(argv[1]));
+printf("%d\n", no_of_coins);
 }
 
 return (0);

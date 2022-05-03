@@ -48,8 +48,8 @@ ones = ones + 1;
 
 }
 
-coins = twenty_fives + tens + fives + twos + ones;
-return (coins);
+total_coins = twenty_fives + tens + fives + twos + ones;
+return (total_coins);
 }
 
 /**

@@ -17,7 +17,7 @@ char *buffer = malloc(sizeof(c) * size);
 unsigned int i;
 
 if (size == 0 || buffer == NULL)
-
+{
 return (NULL);
 }
 

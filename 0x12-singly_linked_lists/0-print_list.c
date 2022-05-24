@@ -1,12 +1,9 @@
 #include "lists.h"
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
+ * print_list - prints all the elements of a list_t list
+ * @h: head of linked list
+ * Return: number of elements
  */
 
 size_t print_list(const list_t *h)
@@ -19,7 +16,7 @@ while (h != NULL)
 size = size + 1;
 
 if (h->str == NULL)
-printf("[%d] nil\n", 0);
+printf("[%d] (nil)\n", 0);
 
 else
 printf("[%d] %s\n", h->len, h->str);

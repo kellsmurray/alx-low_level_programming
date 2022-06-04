@@ -14,10 +14,13 @@ va_start(args, type);
 
 if (type == 's')
 dprintf(STDERR_FILENO, message, va_arg(args, char *));
+
 else if (type == 'd')
 dprintf(STDERR_FILENO, message, va_arg(args, int));
+
 else if (type == 'N')
 dprintf(STDERR_FILENO, message, "");
+
 else
 dprintf(STDERR_FILENO, "Error: Does not match any type\n");
 
